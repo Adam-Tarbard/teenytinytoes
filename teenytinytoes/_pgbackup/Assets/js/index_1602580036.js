@@ -1,13 +1,7 @@
 $(document).ready(function() {
-    $('.main-carousel').flickity({
-        cellAlign: 'center',
-		contain: true,
-		prevNextButtons: false,
-		pageDots: false,
-		autoPlay: 2000,
-		wrapAround: true,
-		selectedAttraction: 0.01
-    });			
+    $('.slider').slider({
+         height: 600
+    });
     $('.materialboxed').materialbox();
     $('.parallax').parallax();
     $('.scrollspy').scrollSpy();
@@ -20,3 +14,17 @@ $(document).ready(function() {
     });
     $('.modal-trigger').leanModal();
     });
+});
+
+$('.main-carousel').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true
+});
+
+var $carousel = $('.carousel').flickity();
+
+$('.button-group').on( 'click', '.button', function() {
+  var index = $(this).index();
+  $carousel.flickity( 'select', index );
+});

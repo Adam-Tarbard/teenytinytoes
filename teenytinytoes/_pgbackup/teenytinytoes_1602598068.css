@@ -20,7 +20,7 @@
     box-sizing: border-box;
 }
 
-.main-carousel {
+.carousel {
     background: white-space;
 }
 
@@ -82,21 +82,7 @@
 }
 
 .flickity-page-dots {
-    bottom: 0px;
-}
-
-/* white circles */
-.flickity-page-dots .dot {
-    width: 12px;
-    height: 12px;
-    opacity: 1;
-    background: transparent;
-    border: 2px solid white;
-}
-
-/* fill-in selected dot */
-.flickity-page-dots .dot.is-selected {
-    background: white;
+    bottom: -60px;
 }
 
 

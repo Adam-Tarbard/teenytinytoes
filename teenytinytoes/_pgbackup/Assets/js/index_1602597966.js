@@ -1,13 +1,16 @@
 $(document).ready(function() {
-    $('.main-carousel').flickity({
-        cellAlign: 'center',
-		contain: true,
-		prevNextButtons: false,
-		pageDots: false,
-		autoPlay: 2000,
-		wrapAround: true,
-		selectedAttraction: 0.01
-    });			
+    var slider = document.querySelector('#slider');
+			imagesLoaded(slider, function() {
+			// load flickity only when images have all loaded
+			var flkty = new Flickity( slider, {
+				cellAlign: 'left',
+				contain: true,
+				prevNextButtons: false,
+				pageDots: false,
+				autoPlay: 2000,
+				wrapAround: true,
+				selectedAttraction: 0.01,
+			});
     $('.materialboxed').materialbox();
     $('.parallax').parallax();
     $('.scrollspy').scrollSpy();

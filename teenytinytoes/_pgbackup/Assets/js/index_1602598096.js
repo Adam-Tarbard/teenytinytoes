@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('.main-carousel').flickity({
-        cellAlign: 'center',
+        cellAlign: 'left',
 		contain: true,
 		prevNextButtons: false,
 		pageDots: false,

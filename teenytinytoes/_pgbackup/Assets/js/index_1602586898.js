@@ -1,13 +1,7 @@
 $(document).ready(function() {
-    $('.main-carousel').flickity({
-        cellAlign: 'center',
-		contain: true,
-		prevNextButtons: false,
-		pageDots: false,
-		autoPlay: 2000,
-		wrapAround: true,
-		selectedAttraction: 0.01
-    });			
+    $('.slider').slider({
+         height: 600
+    });
     $('.materialboxed').materialbox();
     $('.parallax').parallax();
     $('.scrollspy').scrollSpy();
@@ -18,5 +12,6 @@ $(document).ready(function() {
         selectMonths: true, // Creates a dropdown to control month
         selectYears: 15 // Creates a dropdown of 15 years to control year
     });
+    $('#popular-courses').flickity();
     $('.modal-trigger').leanModal();
     });

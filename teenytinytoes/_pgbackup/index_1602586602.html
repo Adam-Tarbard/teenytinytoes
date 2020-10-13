@@ -7,7 +7,6 @@
         <!-- CSS  -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-        <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/1.5.2/css/ionicons.min.css">
         <link href="parallax-template.css" type="text/css" rel="stylesheet" media="screen,projection"/>
         <link href="teenytinytoes.css" rel="stylesheet" type="text/css">
@@ -96,7 +95,7 @@
             <br/>
         </div>
         <div class="center-align container">
-            <img src="Assets/img/landscapeframe 2.jpeg" class="center-align responsive-img"/>
+            <img src="Assets/img/landscapeframe.jpg" class="center-align responsive-img"/>
         </div>
         <br/>
         <div class="container">
@@ -107,27 +106,37 @@
             </div>
         </div>
         <br/>
-        <div class="main-carousel" data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false }'>
+        <img class="materialboxed responsive-img" src="Assets/img/greenframe.jpg"/>
+        <img src="Assets/img/frame10.jpeg" class="materialboxed responsive-img"/>
+        <img src="Assets/img/impressioning.jpg" class="materialboxed responsive-img"/>
+        <div class="carousel js-flickity">
+            <!-- images from unsplash.com -->
             <div class="carousel-cell">
-                <img src="Assets/img/greenframe.jpg"/>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree"/>
             </div>
             <div class="carousel-cell">
-                <img src="Assets/img/impressioning.jpg"/>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" alt="submerged"/>
             </div>
             <div class="carousel-cell">
-                <img src="Assets/img/frame10.jpeg"/>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" alt="look-out"/>
             </div>
             <div class="carousel-cell">
-                <img src="/Assets/img/clayprint.jpg"/>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade"/>
             </div>
             <div class="carousel-cell">
-                <img src="/Assets/img/frame9.jpg"/>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" alt="drizzle"/>
             </div>
             <div class="carousel-cell">
-                <img src="/Assets/img/impressioning 4.jpg"/>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose"/>
             </div>
             <div class="carousel-cell">
-                <img src="/Assets/img/frame7.jpg"/>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" alt="contrail"/>
+            </div>
+            <div class="carousel-cell">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" alt="golden hour"/>
+            </div>
+            <div class="carousel-cell">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" alt="flight formation"/>
             </div>
         </div>
         <div class="container">
@@ -199,10 +208,22 @@ Petworth, Portsmouth, Pulborough, Selsey, Southsea, Waterlooville.</p>
                 </div>
             </div>
         </footer>
+        <div class="hide-on-large-only">Menu
+</div>
         <!--  Scripts-->
         <script src="assets/js/jquery.min.js"></script>
         <script src="materialize/js/materialize.js"></script>
-        <script type="text/javascript" src="Assets/js/index.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.pkgd.min.js"></script>
+        <script>
+    var elem   = document.getElementById('popular-courses');
+    var slider = new Flickity( elem );
+  </script>
+        <script>
+    $('#popular-courses').flickity();
+  </script>
+        <script type="text/javascript" src="Assets/js/index.js"></script>
+        <script>
+    $(document).ready(function() { M.AutoInit();});
+  </script>
     </body>
 </html>
