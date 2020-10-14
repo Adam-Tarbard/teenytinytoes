@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <!-- CSS  -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/1.5.2/css/ionicons.min.css">
         <link href="parallax-template.css" type="text/css" rel="stylesheet" media="screen,projection"/>
         <link href="teenytinytoes.css" rel="stylesheet" type="text/css">
@@ -15,11 +15,14 @@
         <div class="center-align container white">
             <img src="Assets/img/logo.jpg" width="40%" class="responsive-img">
         </div>
-        <nav class="nav-and-footer"> 
+        <nav class="white-text nav-and-footer"> 
             <div class="nav-wrapper"> 
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons white-text">menu</i></a> 
                 <div class="container">
                     <ul class="hide-on-med-and-down"> 
+                        <li>
+                            <i href="index.html" class="material-icons white-text">menu</i>
+                        </li>
                         <li>
                             <i href="index.html" class="material-icons white-text">menu</i>
                         </li>
@@ -46,10 +49,16 @@
             </div>
             <ul class="sidenav" id="mobile-demo">
                 <li>
+                    <img src="Assets/img/logo.jpg" width="40%" class="responsive-img">
+                </li>
+                <li>
                     <a href="index.html" class="grey-text">Home</a>
                 </li>
                 <li>
                     <a href="handandfootcasts.html" class="grey-text">Hand & Foot Casts</a>
+                </li>
+                <li>
+                    <a href="jewellery.html" class="grey-text">Jewellery</a>
                 </li>
                 <li>
                     <a href="customerreviews.html" class="grey-text">Customer Reviews</a>
@@ -59,11 +68,8 @@
                 </li>
                 <li>
                     <a href="prices.html" class="grey-text">Prices</a>
-                </li>
-                <li>
-                    <a href="jewellery.html" class="grey-text">Jewellery</a>
                 </li>                 
-            </ul>             
+            </ul>
         </nav>
         <div id="index-banner">
             <div class="no-pad-bot responsive-img section">
@@ -184,13 +190,17 @@
 Billingshurst, Bognor Regis, Bordon, Cosham, Chichester, Clanfield, Cranleigh,
 Crawley, Dorking, Emsworth, Fareham, Fernhurst, Godalming, Guildford,
 Haslemere, Havant, Hindhead, Horsham, Liphook, Liss, Midhurst, Petersfield,
-Petworth, Portsmouth, Pulborough, Selsey, Southsea, Waterlooville.</p>
+Petworth, Portsmouth, Pulborough, Selsey, Southsea, Waterlooville, Woking.</p>
                 </div>
             </div>
         </footer>
         <!--  Scripts-->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="materialize/js/materialize.js"></script>
+        <script src="Assets/js/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script type="text/javascript" src="Assets/js/index.js"></script>
+        <script>
+            $(document).ready(function() { M.AutoInit() });
+        </script>
         <script type="text/javascript" src="Assets/js/index.js"></script>
     </body>
 </html>
