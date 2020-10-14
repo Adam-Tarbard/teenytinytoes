@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>teenytinytoes</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <title>Parallax Template - Materialize</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <!-- CSS  -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-        <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/1.5.2/css/ionicons.min.css">
         <link href="parallax-template.css" type="text/css" rel="stylesheet" media="screen,projection"/>
         <link href="teenytinytoes.css" rel="stylesheet" type="text/css">
@@ -107,27 +106,17 @@
             </div>
         </div>
         <br/>
-        <div class="main-carousel" data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false }'>
-            <div class="carousel-cell">
-                <img src="Assets/img/greenframe.jpg"/>
-            </div>
-            <div class="carousel-cell">
-                <img src="Assets/img/impressioning.jpg"/>
-            </div>
-            <div class="carousel-cell">
-                <img src="Assets/img/frame10.jpeg"/>
-            </div>
-            <div class="carousel-cell">
-                <img src="/Assets/img/clayprint.jpg"/>
-            </div>
-            <div class="carousel-cell">
-                <img src="/Assets/img/frame9.jpg"/>
-            </div>
-            <div class="carousel-cell">
-                <img src="/Assets/img/impressioning 4.jpg"/>
-            </div>
-            <div class="carousel-cell">
-                <img src="/Assets/img/frame7.jpg"/>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4">
+                    <img src="Assets/img/frame10.jpeg" class="responsive-img"/> 
+                </div>
+                <div class="col s12 m4">
+                    <img src="Assets/img/greenframe.jpg" class="responsive-img"/> 
+                </div>
+                <div class="col s12 m4">
+                    <img src="Assets/img/impressioning.jpg" class="responsive-img"/> 
+                </div>
             </div>
         </div>
         <div class="container">
@@ -166,9 +155,9 @@
                                     <td><i class="material-icons">phone</i></td> 
                                     <td>07855 840550</td> 
                                 </tr>                                 
-                                <tr> 
+                                <tr>
                                     <td><i class="material-icons">facebook</i></td> 
-                                    <td>teenytinytoesbabyhand&amp;footprintcasting</td> 
+                                    <td><a href="https://www.facebook.com/teenytinytoesbabyhandfootprintcasting/?tn-str=k*F" class="white-text">teenytinytoesbabyhand&amp;footprintcasting</a></td> 
                                 </tr>                                 
                             </tbody>                             
                         </table>                         
@@ -203,6 +192,5 @@ Petworth, Portsmouth, Pulborough, Selsey, Southsea, Waterlooville.</p>
         <script src="assets/js/jquery.min.js"></script>
         <script src="materialize/js/materialize.js"></script>
         <script type="text/javascript" src="Assets/js/index.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.pkgd.min.js"></script>
     </body>
 </html>

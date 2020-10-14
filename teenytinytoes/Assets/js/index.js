@@ -1,12 +1,4 @@
 $(document).ready(function() {
-    $('.main-carousel').flickity({
-        cellAlign: 'center',
-		contain: true,
-		prevNextButtons: false,
-		pageDots: false,
-		autoPlay: 2000,
-		wrapAround: true,
-		selectedAttraction: 0.01
     });			
     $('.materialboxed').materialbox();
     $('.parallax').parallax();
