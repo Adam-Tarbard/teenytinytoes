@@ -1,0 +1,24 @@
+.nav-and-footer {
+    background-color: #ff4081;
+}
+
+.normal-card {
+    background-color: #26c6da;
+}
+
+.review-card {
+    background-color: #ffffff;
+    color: #757575;
+}
+
+.title-colour {
+    color: #757575;
+}
+
+.carousel-cell {
+    width: 50%;
+
+    /* half-width */
+    height: 160px;
+    margin-right: 10px;
+}
